@@ -29,13 +29,12 @@ enum AppStatus { RUNNING, TERMINATED };
 constexpr int WINDOW_WIDTH  = 1280,
               WINDOW_HEIGHT = 960;
 
-// Background color components
+// The color of Universe
 constexpr float BG_RED     = 0.255f,
                 BG_BLUE    = 0.231f,
                 BG_GREEN   = 0.248f,
                 BG_OPACITY = 1.0f;
 
-// Our viewport—or our "camera"'s—position and dimensions
 constexpr int VIEWPORT_X      = 0,
               VIEWPORT_Y      = 0,
               VIEWPORT_WIDTH  = WINDOW_WIDTH,
@@ -51,11 +50,11 @@ constexpr GLint NUMBER_OF_TEXTURES = 1,
 //constexpr char RED_FILEPATH[]    = "/Users/tutu/Desktop/CS3113/HW1/SDLProject/red.png",
 //                BLUE_FILEPATH[] = "/Users/tutu/Desktop/CS3113/HW1/SDLProject/blue.png";
 constexpr char RED_FILEPATH[]    = "red.png",
-                BLUE_FILEPATH[] = "blue.png";
+                BLUE_FILEPATH[] = "blue.png"; // added in Build Phases
 
 // Parameters for scaling
-constexpr float GROWTH_FACTOR = 1.2f;  // growth rate of 1.0% per frame
-constexpr float SHRINK_FACTOR = 0.8f;  // growth rate of -1.0% per frame
+constexpr float GROWTH_FACTOR = 1.2f;
+constexpr float SHRINK_FACTOR = 0.8f;
 constexpr int MAX_FRAME = 30;
 int g_frame_counter = 0;
 bool g_is_growing = true;
@@ -226,7 +225,7 @@ void draw_object(glm::mat4 &object_g_model_matrix, GLuint &object_texture_id)
 {
     g_shader_program.set_model_matrix(object_g_model_matrix);
     glBindTexture(GL_TEXTURE_2D, object_texture_id);
-    glDrawArrays(GL_TRIANGLES, 0, 6); // we are now drawing 2 triangles, so use 6, not 3
+    glDrawArrays(GL_TRIANGLES, 0, 6);
 }
 
 
@@ -267,12 +266,12 @@ void shutdown() { SDL_Quit(); }
  */
 int main(int argc, char* argv[])
 {
-    // Initialise our program—whatever that means
+    // Initialise
     initialise();
     
     while (g_app_status == RUNNING)
     {
-        process_input();  // If the player did anything—press a button, move the joystick—process it
+        process_input();
         update();         // Using the game's previous state, and whatever new input we have, update the game's state
         render();         // Once updated, render those changes onto the screen
     }
