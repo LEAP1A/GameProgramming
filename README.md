@@ -20,3 +20,13 @@ This project is a completed Pong game. All requirements are satisfied including 
 - The number of balls can be changed, ranging from 1 to 3, simply by pressing 1/2/3. However, the winner will be the first player who loses a ball. The winner will not be updated for the second/third ball.
   <img width="959" alt="image" src="https://github.com/user-attachments/assets/ca4a3b23-3825-4d1f-8c21-77c9618882c0" />
 
+## HW3
+This project is a simplified lunar lander game. All requirements are satisfied including extra credits.
+- By pressing "SPACE", the game will start, and the rocket will start being attracted by the ground (i.e. free fall).
+- "W", "A", and "D" are used to ignite your engine while burning fuel. The fuel is initially set to be 2000. After burning out, you cannot control it anymore. Check the remaining fuel in the top right corner frequently!
+- Even if there is gravity in this world, there is no air resistance. That means all horizontal acceleration needs to be counteracted by an equal amount of reverse thrust (fuel!!!).
+- It is extremely difficult to land on the moving platform, so try to land on the static platform and just consider the moving one as an obstacle you need to avoid...
+- Too fast vertical speed / horizontal speed will be an unstable approach, causing failure!
+<img width="950" alt="Screenshot 2025-03-18 at 9 23 10 PM" src="https://github.com/user-attachments/assets/6331c527-735b-41da-9cf1-68b441a0284f" />
+
+
