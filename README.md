@@ -29,4 +29,24 @@ This project is a simplified lunar lander game. All requirements are satisfied i
 - Too fast vertical speed / horizontal speed will be an unstable approach, causing failure!
 <img width="950" alt="Screenshot 2025-03-18 at 9 23 10 PM" src="https://github.com/user-attachments/assets/6331c527-735b-41da-9cf1-68b441a0284f" />
 
+## HW4
+This project is a platformer game containing three levels. All requirements are satisfied except for the extra credit.
+Features:
+- There is a simple menu page.
+- The player has a total of three lives to complete three levels.
+- A single wooden box is used as the target
+- Jump to hit the bottom of the target to win this level/go to the next level
+- The levels are increasing in difficulty as more enemies are included with more tricky hunting logic.
+  - The first level simply includes a walker-type enemy doing cycling motions.
+  - The second level includes two enemies in guard type. Once the player gets close, they will start chasing the player.
+  - The third level includes three enemies, one for flyer type and two for guard type.
+- The higher level has a more complicated map.
+- The enemies have different textures.
+- There is an audio system in this game.
+  - A BGM is played once the game starts.
+  - Three sound effects are included - jump, death, and win.
+<img width="635" alt="image" src="https://github.com/user-attachments/assets/8bd3f201-d192-41dd-8e64-35cb685fc633" />
+
+
+
 
