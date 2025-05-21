@@ -10,14 +10,19 @@ This is the final project - Jet War, which is inspired by the Strikers 1945 arca
 - Only 1 life is available in the first two levels, and 3 lives are available in the final level. However, you can easily respawn by clicking Enter after death. The player will die under two conditions: colliding with a bullet or colliding with an enemy.
 - Spotlight effect is applied in front of the player, implemented by the shader.
 <img width="288" alt="image" src="https://github.com/user-attachments/assets/88cb638f-63aa-45c6-9aca-82e2c049c28a" />
+
 - Round bullets and long bullets are fired by different enemies.
 <img width="589" alt="image" src="https://github.com/user-attachments/assets/fe86c6af-7116-4bf4-904d-b0bfaea63eb4" />
+
 - After killing an enemy, both the explosion animation and the sound effect will come up
 <img width="594" alt="image" src="https://github.com/user-attachments/assets/54ceb3e4-b8ed-4163-8fe3-6be2b0c57108" />
+
 - There is a final boss in the last level, who will keep track of the player's position and fire with various patterns. The health of the boss will appear in the top right corner. The success condition is the health goes to zero. In this level, the player is also enhanced to have 4 bullets fired each time.
 <img width="590" alt="image" src="https://github.com/user-attachments/assets/da5a0a5d-c29a-4b9f-b789-5c7f1f8286f8" />
+
 - Radiation Fire
 <img width="586" alt="image" src="https://github.com/user-attachments/assets/56404edb-caa2-4da9-9e94-0ba5928b3407" />
+
 - Win
 <img width="584" alt="image" src="https://github.com/user-attachments/assets/53f544a3-5859-49c5-8720-6258e0db43d9" />
 
